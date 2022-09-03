@@ -70,7 +70,7 @@ body {
     font-weight: 600;
     font-size: 20px;
     display: block;
-    padding: 40px 30px;
+    padding: 50px 30px;
     transition: all .3s ease-in-out;
 }
 
@@ -84,7 +84,6 @@ body {
     transition: all .3s ease-in-out;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    height: 100vh;
 }
 
 .burger {
@@ -157,7 +156,6 @@ body {
         position: inherit;
         display: flex;
         width: auto;
-        height: auto;
     }
 
     .logo-container {
@@ -255,6 +253,20 @@ body {
     padding: 10px;
     text-align: center;
     font-size: 12px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    text-align: right;
+    color: #7D8D96;
+    margin-bottom: 15px;
+}
+
+.footer-links a {
+    color: #7D8D96;
+    text-decoration: none;
+    margin: 0 15px;
 }
 
 @media screen and (min-width: 768px) {
