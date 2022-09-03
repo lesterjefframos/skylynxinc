@@ -1,0 +1,49 @@
+.about-hero {
+    background-image: url('../img/about-hero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 20% 50%;
+    height: 50vh;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-content {
+    background-color: rgba(255, 255, 255, .7);
+    backdrop-filter: blur(10px);
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, .5);
+}
+
+.title {
+    font-size: 25px;
+    font-weight: 800;
+    color: #273D4A;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .about-hero {
+        justify-content: right;
+    }
+
+    .about-content {
+        margin-right: 5%;
+    }
+}
+
+.why-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    margin: 40px 0;
+}
