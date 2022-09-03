@@ -1,10 +1,10 @@
 .hero {
     display: block;
-    background-image: url('../img/mobile-home-banner.jpg');
+    background: linear-gradient(to top, #000000 -10%, transparent), url('../img/home-banner.jpg');
     height: 70vh;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top center;
+    background-position: 80% 50%;
     position: relative;
     text-align: center;
     z-index: -1;
