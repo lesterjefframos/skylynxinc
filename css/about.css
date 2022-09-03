@@ -84,7 +84,8 @@
         margin: 70px 0;
     }
 
-    .why-section > .body {
+    .why-section > .body,
+    .section-text > .body {
         font-size: 22px;
     }
 }
@@ -102,6 +103,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 30px;
 }
 
 .team-img {
@@ -117,4 +119,157 @@
     flex-direction: column;
     text-align: center;
     padding: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .team-section {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        align-content: center;
+        padding: 0 20px;
+    }
+
+    .section-text {
+        text-align: left;
+    }
+
+    .team-img {
+        margin-bottom: 0;
+    }
+
+    .team-img img {
+        width: 400px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .team-section {
+        padding: 0 5%;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .team-section {
+        padding: 0 10%;
+    }
+
+    .section-text {
+        padding: 0 50px;
+    }
+}
+
+.mv-section {
+    background-image: url('../img/mis-vis-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+    padding: 20px 10px;
+}
+
+.mv-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mis,
+.vis {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(255, 255, 255, .75);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: solid 2px #273D4A;
+    padding: 10px;
+}
+
+.vis {
+    margin-top: 20px;
+}
+
+.mis img,
+.vis img {
+    width: 45px;
+    color: #273D4A;
+}
+
+.mission,
+.vision {
+    font-size: 25px;
+    font-weight: bold;
+    color: #273D4A;
+    margin-bottom: 15px;
+}
+
+.mis-body,
+.vis-body {
+    margin-top: 15px;
+}
+
+@media screen and (min-width: 768px) {
+    .mv-section {
+        height: 20vh;
+        margin-top: 15%;
+    }
+    .mv-container {
+        flex-direction: row;
+        justify-content: center;
+        margin-top: -10%;
+    }
+
+    .mis,
+    .vis {
+        margin: 0 5px;
+    }
+    
+    .vis {
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .mv-section {
+        margin-top: 15%;
+    }
+
+    .mv-container {
+        padding: 0 20px;
+    }
+
+    .mis,
+    .vis {
+        padding: 30px 50px;
+        margin: 0 20px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .mv-section {
+        height: 250px;
+    }
+
+    .mv-container {
+        padding: 0 50px;
+        width: 80%;
+        margin: -8% auto auto auto;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .mv-container {
+        width: 70%;
+    }
+}
+
+/* footer reset */
+
+.footer-section {
+    background-color: #ffffff;
 }
