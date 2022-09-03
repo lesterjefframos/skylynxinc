@@ -157,6 +157,7 @@ body {
         position: inherit;
         display: flex;
         width: auto;
+        height: auto;
     }
 
     .logo-container {
