@@ -61,7 +61,7 @@ body {
 .nav-list li {
     list-style-type: none;
     margin: 20px 0;
-    text-align: right;
+    text-align: center;
 }
 
 .nav-list li a {
@@ -70,11 +70,12 @@ body {
     font-weight: 600;
     font-size: 20px;
     display: block;
-    padding: 50px 30px;
+    padding: 30px 30px;
     transition: all .3s ease-in-out;
 }
 
 .nav-list {
+    height: 100vh;
     position: fixed;
     background-color: transparent;
     width: 100%;
@@ -156,6 +157,7 @@ body {
         position: inherit;
         display: flex;
         width: auto;
+        height: auto;
     }
 
     .logo-container {

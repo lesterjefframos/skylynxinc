@@ -3,7 +3,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 20% 50%;
-    height: 50vh;
+    height: 80vh;
     padding: 10px;
     display: flex;
     justify-content: center;
@@ -30,6 +30,12 @@
     margin-bottom: 20px;
 }
 
+@media screen and (min-height: 812px) {
+    .about-hero {
+        height: 60vh;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .about-hero {
         justify-content: right;
@@ -40,10 +46,75 @@
     }
 }
 
+@media screen and (min-width: 1024px) {
+    .about-hero {
+        height: 30vh;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .about-hero {
+        height: 80vh;
+    }
+
+    .about-content {
+        margin-right: 10%;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    .body {
+        font-size: 18px;
+    }
+}
+
 .why-section {
     display: flex;
     flex-direction: column;
     text-align: center;
     padding: 10px;
     margin: 40px 0;
+}
+
+@media screen and (min-width: 1280px) {
+    .why-section {
+        padding: 0 150px;
+        margin: 70px 0;
+    }
+
+    .why-section > .body {
+        font-size: 22px;
+    }
+}
+
+.hr {
+    margin: 0 auto;
+    width: 30%;
+    height: 2px;
+    background-color: #7D8D96;
+    margin-bottom: 50px;
+}
+
+.team-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-img {
+    margin-bottom: 20px;
+}
+
+.team-img img {
+    width: 360px;
+}
+
+.section-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
 }
