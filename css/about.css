@@ -31,11 +31,6 @@
     margin-bottom: 20px;
 }
 
-@media screen and (min-height: 812px) {
-    .about-hero {
-        height: 60vh;
-    }
-}
 
 @media screen and (min-width: 768px) {
     .about-hero {
@@ -49,7 +44,7 @@
 
 @media screen and (min-width: 1024px) {
     .about-hero {
-        height: 50vh;
+        height: 60vh;
     }
 }
 
