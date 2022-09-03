@@ -268,7 +268,7 @@ body {
 .footer-links a {
     color: #7D8D96;
     text-decoration: none;
-    margin: 0 15px;
+    margin: 0 14px;
 }
 
 @media screen and (min-width: 768px) {
