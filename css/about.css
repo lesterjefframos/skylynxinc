@@ -269,3 +269,7 @@
 .footer-section {
     background-color: #ffffff;
 }
+
+.footer-logo img {
+    filter: invert(100%);
+}
