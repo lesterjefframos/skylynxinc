@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyLynx Tech Inc.</title>
+    <link rel="stylesheet" type="text/css" href="css/master.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <script src="https://kit.fontawesome.com/7814f1ff78.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="main-nav">
+            <div class="logo-container">
+                <img src="logo/company-logo.svg" alt="">
+            </div>
+            <ul class="nav-list" id="nav-toggle">
+                <li class="nav-item active-li"><a href="#">Home</a></li>
+                <li class="nav-item"><a href="#">About Us</a></li>
+                <li class="nav-item"><a href="#">Services</a></li>
+                <li class="nav-item"><a href="#">Careers</a></li>
+            </ul>
+            <div class="cnt-btn">
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+        <div class="burger">
+            <span class="line-1"></span>
+            <span class="line-2"></span>
+            <span class="line-3"></span>
+        </div>
+    </div>
+
+    <div class="hero">
+        <div class="hero-text">
+            <p>Our services are provided exclusively for</p>
+            <h1>100% off-shore and<br>foreign based clients</h1>
+            <p>Our services are provided exclusively for</p>
+            <div class="hero-btn">
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+    <div class="svc-section">
+        <div class="sec-cont">
+            <span class="title">our services</span>
+            <span class="body">SkyLynx is a one-stop BPO company which provides Customer Support Services, Marketing Services,
+                promotion services, accounting services, IT infrastracture/facilities services, application programming,
+                telecommunications services, and all related technical support services.</span>
+            <span class="body">SkyLynx also provides equipment leasing services including:</span>
+        </div>
+        <div class="services">
+            <div class="container">
+                <img src="img/studio.jpg" alt="Studio Image">
+                <span class="svc-title">studio</span>
+                <span class="svc-desc"><i>Lorem ipsum dolor sit amet.</i></span>
+            </div>
+            <div class="container">
+                <img src="img/video.jpg" alt="Studio Image">
+                <span class="svc-title">video</span>
+                <span class="svc-desc"><i>Lorem ipsum dolor sit amet.</i></span>
+            </div>
+            <div class="container">
+                <img src="img/concierge.jpg" alt="Studio Image">
+                <span class="svc-title">concierge</span>
+                <span class="svc-desc"><i>Lorem ipsum dolor sit amet.</i></span>
+            </div>
+        </div>
+        <div class="section-btn">
+            <a href="#">More Services</a>
+        </div>
+    </div>
+    <div class="non-inter-section">
+        <span>
+            Non-interactive gaming business clients<br>
+            clients may be considered on a case by case basis<br>depending on client’s&nbsp;<strong>Business Profile</strong>.
+        </span>
+    </div>
+    <div class="join-section">
+        <div class="join-content">
+            <span class="join-title">Interester in joining our Team?</span>
+            <span class="join-body">Send us an email with your contact info, your CV, and cover letter</span>
+            <span class="join-btn"><a href="#">Email us now</a></span>
+        </div>
+        <div class="join-img">
+            <img src="img/hr-girl.png" alt="Office Girl">
+        </div>
+    </div>
+
+    <!-- footer -->
+
+    <div class="footer-section">
+        <div class="footer-top">
+            <div class="follow">
+                <span>Follow us</span>
+            </div>
+            <div class="icons">
+                <div class="items">
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-line"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-weixin"></i></a>
+                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                    <a href=""><i class="fa-brands fa-telegram"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    <a href=""><i class="fa-brands fa-viber"></i></a>
+                </div>
+                <div class="footer-logo">
+                    <img src="logo/company-logo.svg" alt="">
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="contact">
+                <div class="loc">
+                    <img src="icons/location.svg" alt="Location" class="detail-icon">
+                    <span>123 PBCom Tower<br>Ayala Ave.,Makati City, Philippines</span>
+                </div>
+                <div class="num">
+                    <img src="icons/moblie.svg" alt="Location" class="detail-icon">
+                    <span>+63 917 123 4567</span>
+                </div>
+                <div class="email">
+                    <img src="icons/email.svg" alt="Location" class="detail-icon">
+                    <span>email@domain.com</span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <span>Copyright 2021 SkyLynx Tech Inc. All Rights Reserved.</span>
+        </div>
+    </div>
+</body>
+<script>
+    const burger = document.querySelector(".burger");
+    const navMenu = document.querySelector(".nav-list");
+
+    burger.addEventListener("click", () => {
+        burger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+    })
+
+    document.querySelectorAll(".nav-item").forEach(n => n.addEventListener("click", () => {
+        burger.classList.remove("active");
+        navMenu.classList.remove("active");
+    }))
+</script>
+</html>
