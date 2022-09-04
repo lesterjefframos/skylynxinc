@@ -142,4 +142,8 @@ body.modal-container {
         padding: 30px 50px;
         max-height: 90vh;
     }
+
+    .modal-close {
+        font-size: 25px;
+    }
 }
