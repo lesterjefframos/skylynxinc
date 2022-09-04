@@ -1,0 +1,221 @@
+.service-hero {
+    background-image: url('../img/services-mobile.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 40vh;
+    padding: 20px;
+    background-color: #eeeeee;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .3);
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text span {
+    display: block;
+    text-align: center;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 800;
+    color: #273D4A;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .service-hero {
+        background-image: url('../img/services-banner.jpg');
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        align-content: center;
+    }
+
+    .hero-text {
+        width: 600px;
+        margin-left: 40%;
+    }
+
+    .hero-text span {
+        text-align: right;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .service-hero {
+        height: 50vh;
+    }
+    .hero-text {
+        width: 400px;
+        margin-left: 50%;
+    }
+
+    .title {
+        font-size: 35px;
+    }
+
+    .body {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .service-hero {
+        height: 70vh;
+    }
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.svc-header {
+    text-align: center;
+}
+
+.svc-header span {
+    display: block;
+}
+
+.s-head {
+    color: #7D8D96;
+    text-transform: uppercase;
+}
+
+.l-head {
+    color:#273D4A;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.svc-section {
+    width: 100%;
+}
+
+.svc-container {
+    display: block;
+    width: 100%;
+}
+
+.svc-offer {
+    padding: 50px;
+    text-align: center;
+}
+
+.svc-icon.studio,
+.svc-icon.video,
+.svc-icon.fac,
+.svc-icon.it-infra,
+.svc-icon.conc,
+.svc-icon.cs {
+    background-size: cover;
+    background-position: center;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.studio {
+    background-image: url('../img/studio.jpg');
+}
+
+.video {
+    background-image: url('../img/video.jpg');
+}
+
+.fac {
+    background-image: url('../img/office.jpg');
+}
+
+.it-infra {
+    background-image: url('../img/it-infra.jpg');
+}
+
+.conc {
+    background-image: url('../img/concierge.jpg');
+}
+
+.cs {
+    background-image: url('../img/cust-service.jpg');
+}
+
+.svc-item {
+    display: block;
+    text-transform: uppercase;
+    font-size: 20px;
+    color:#273D4A;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.svc-des {
+    display: block;
+    font-style: italic;
+}
+
+.svc-offer a {
+    display: block;
+    margin: 20px 0 10px 0;
+    color: #273D4A;
+}
+
+.bg-1 {
+    background-color: #ffffff;
+}
+
+.bg-2 {
+    background-color: #EAF0F3;
+}
+
+@media screen and (min-width: 768px) {
+    .svc-section {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+    .svc-container {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .svc-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+    .sec-g1,
+    .sec-g2 {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1366px){
+    .svc-section {
+        padding: 0 100px;
+        margin-bottom: 80px;
+    }
+
+    .svc-header {
+        margin: 50px;
+    }
+
+    .s-head {
+        font-size: 22px;
+    }
+
+    .l-head {
+        font-size: 35px;
+    }
+}
