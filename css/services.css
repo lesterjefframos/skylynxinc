@@ -41,6 +41,10 @@
     .hero-text span {
         text-align: right;
     }
+
+    .title {
+        font-size: 30px;
+    }
 }
 
 @media screen and (min-width: 1280px) {
