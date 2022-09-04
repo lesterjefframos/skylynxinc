@@ -95,10 +95,10 @@
     <div class="footer-section">
         <div class="footer-top">
             <div class="footer-links">
-                <a href="#">Home</a>
-                <a href="#">About Us</a>
-                <a href="#">Services</a>
-                <a href="#">Careers</a>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="career.html">Careers</a>
             </div>
             <div class="line"></div>
             <div class="follow">
@@ -142,18 +142,5 @@
         </div>
     </div>
 </body>
-<script>
-    const burger = document.querySelector(".burger");
-    const navMenu = document.querySelector(".nav-list");
-
-    burger.addEventListener("click", () => {
-        burger.classList.toggle("active");
-        navMenu.classList.toggle("active");
-    })
-
-    document.querySelectorAll(".nav-item").forEach(n => n.addEventListener("click", () => {
-        burger.classList.remove("active");
-        navMenu.classList.remove("active");
-    }))
-</script>
+<script src="js/nav.js"></script>
 </html>
