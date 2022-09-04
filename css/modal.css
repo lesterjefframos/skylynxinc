@@ -1,0 +1,143 @@
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-title span {
+    font-size: 20px;
+    color: #273D4A;
+    font-weight: 600;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: #273D4A;
+}
+
+/* .svc-img {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 150px;
+    margin-top: 10px;
+}
+
+.svc-studio {
+    background-image: url('../img/studio.jpg');
+} */
+
+.svc-img {
+    margin-top: 10px;
+}
+
+.svc-img img {
+    width: 100%;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-body span {
+    display: block;
+    padding: 10px 0;
+}
+
+.modal-close {
+    color: #273D4A;
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+body.modal-container {
+    position: fixed;
+    overflow: hidden;
+}
+
+.modal-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.modal-show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-content {
+    margin: 20px 0;
+    max-height: 80vh;
+    overflow-y: auto;
+    background-color: #ffffff;
+    width: 90%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .3);
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+    .modal-body {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .svc-img {
+        margin-right: 20px;
+    }
+
+    .svc-img img {
+        width: 250px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .modal-content {
+        padding: 20px 50px;
+        max-height: 90vh;
+    }
+
+    .modal-title span {
+        font-size: 30px;
+    }
+
+    .modal-body span {
+        font-size: 20px;
+    }
+
+    .modal-content h2 {
+        font-size: 22px;
+    }
+    
+    .overview,
+    .duties,
+    .reqs {
+        font-size: 13px;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .modal-content {
+        overflow-y: auto;
+        width: 70%;
+        padding: 30px 50px;
+        max-height: 90vh;
+    }
+}

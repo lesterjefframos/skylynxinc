@@ -9,9 +9,10 @@
     <link rel="icon" href="logo/logo-icon.svg" type="brand-icon">
     <link rel="stylesheet" type="text/css" href="css/master.css">
     <link rel="stylesheet" type="text/css" href="css/services.css">
+    <link rel="stylesheet" type="text/css" href="css/modal.css">
     <script src="https://kit.fontawesome.com/7814f1ff78.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="overflow">
     <div class="nav-bar">
         <div class="main-nav">
             <div class="logo-container">
@@ -53,7 +54,7 @@
                         <div class="svc-icon studio"></div>
                         <span class="svc-item">Studio</span>
                         <span class="svc-des">short service description</span>
-                        <a href="#">View More</a>
+                        <button type="button" data-target="#modal1">VIEW</button>
                     </div>
                 </div>
                 <div class="svc-container">
@@ -61,7 +62,7 @@
                         <div class="svc-icon video"></div>
                         <span class="svc-item">Video</span>
                         <span class="svc-des">short service description</span>
-                        <a href="#">View More</a>
+                        <button type="button" data-target="#modal2">VIEW</button>
                     </div>
                 </div>
                 <div class="svc-container">
@@ -69,7 +70,7 @@
                         <div class="svc-icon fac"></div>
                         <span class="svc-item">Facalities</span>
                         <span class="svc-des">short service description</span>
-                        <a href="#">View More</a>
+                        <button type="button" data-target="#modal3">VIEW</button>
                     </div>
                 </div>
             </div>
@@ -79,7 +80,7 @@
                         <div class="svc-icon it-infra"></div>
                         <span class="svc-item">IT infrastructure</span>
                         <span class="svc-des">short service description</span>
-                        <a href="#">View More</a>
+                        <button type="button" data-target="#modal4">VIEW</button>
                     </div>
                 </div>
                 <div class="svc-container">
@@ -87,7 +88,7 @@
                         <div class="svc-icon cs"></div>
                         <span class="svc-item">customer service</span>
                         <span class="svc-des">short service description</span>
-                        <a href="#">View More</a>
+                        <button type="button" data-target="#modal5">VIEW</button>
                     </div>
                 </div>
                 <div class="svc-container">
@@ -95,13 +96,134 @@
                         <div class="svc-icon conc"></div>
                         <span class="svc-item">concierge</span>
                         <span class="svc-des">short service description</span>
-                        <a href="#">View More</a>
+                        <button type="button" data-target="#modal6">VIEW</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- modal here -->
+
+    <div class="modal-container show" id="modal1">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title">
+                    <span>Studio</span>
+                </div>
+                <div class="modal-btn-container">
+                    <button class="modal-close" data-target="#modal1"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="modal-body">
+                <div class="svc-img svc-studio">
+                    <img src="img/studio.jpg" alt="">
+                </div>
+                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer convallis volutpat eros, id consequat libero interdum quis. Nullam condimentum est sed felis fringilla, ut imperdiet justo bibendum. Proin in mauris risus. Cras egestas facilisis rhoncus. Nunc at porta nulla, non consectetur erat. Aenean non efficitur est, quis venenatis velit. Sed id massa odio. Nunc vitae venenatis quam, sit amet tincidunt purus.</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-container show" id="modal2">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title">
+                    <span>Video</span>
+                </div>
+                <div class="modal-btn-container">
+                    <button class="modal-close" data-target="#modal2"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="modal-body">
+                <div class="svc-img svc-studio">
+                    <img src="img/video.jpg" alt="">
+                </div>
+                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer convallis volutpat eros, id consequat libero interdum quis. Nullam condimentum est sed felis fringilla, ut imperdiet justo bibendum. Proin in mauris risus. Cras egestas facilisis rhoncus. Nunc at porta nulla, non consectetur erat. Aenean non efficitur est, quis venenatis velit. Sed id massa odio. Nunc vitae venenatis quam, sit amet tincidunt purus.</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-container show" id="modal3">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title">
+                    <span>Facilities</span>
+                </div>
+                <div class="modal-btn-container">
+                    <button class="modal-close" data-target="#modal3"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="modal-body">
+                <div class="svc-img svc-studio">
+                    <img src="img/office.jpg" alt="">
+                </div>
+                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer convallis volutpat eros, id consequat libero interdum quis. Nullam condimentum est sed felis fringilla, ut imperdiet justo bibendum. Proin in mauris risus. Cras egestas facilisis rhoncus. Nunc at porta nulla, non consectetur erat. Aenean non efficitur est, quis venenatis velit. Sed id massa odio. Nunc vitae venenatis quam, sit amet tincidunt purus.</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-container show" id="modal4">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title">
+                    <span>IT Infrastructure</span>
+                </div>
+                <div class="modal-btn-container">
+                    <button class="modal-close" data-target="#modal4"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="modal-body">
+                <div class="svc-img svc-studio">
+                    <img src="img/it-infra.jpg" alt="">
+                </div>
+                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer convallis volutpat eros, id consequat libero interdum quis. Nullam condimentum est sed felis fringilla, ut imperdiet justo bibendum. Proin in mauris risus. Cras egestas facilisis rhoncus. Nunc at porta nulla, non consectetur erat. Aenean non efficitur est, quis venenatis velit. Sed id massa odio. Nunc vitae venenatis quam, sit amet tincidunt purus.</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-container show" id="modal5">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title">
+                    <span>Customer Service</span>
+                </div>
+                <div class="modal-btn-container">
+                    <button class="modal-close" data-target="#modal5"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="modal-body">
+                <div class="svc-img svc-studio">
+                    <img src="img/cust-service.jpg" alt="">
+                </div>
+                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer convallis volutpat eros, id consequat libero interdum quis. Nullam condimentum est sed felis fringilla, ut imperdiet justo bibendum. Proin in mauris risus. Cras egestas facilisis rhoncus. Nunc at porta nulla, non consectetur erat. Aenean non efficitur est, quis venenatis velit. Sed id massa odio. Nunc vitae venenatis quam, sit amet tincidunt purus.</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-container show" id="modal6">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title">
+                    <span>Concierge</span>
+                </div>
+                <div class="modal-btn-container">
+                    <button class="modal-close" data-target="#modal6"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="modal-body">
+                <div class="svc-img svc-studio">
+                    <img src="img/concierge.jpg" alt="">
+                </div>
+                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer convallis volutpat eros, id consequat libero interdum quis. Nullam condimentum est sed felis fringilla, ut imperdiet justo bibendum. Proin in mauris risus. Cras egestas facilisis rhoncus. Nunc at porta nulla, non consectetur erat. Aenean non efficitur est, quis venenatis velit. Sed id massa odio. Nunc vitae venenatis quam, sit amet tincidunt purus.</span>
+            </div>
+        </div>
+    </div>
 
     <!-- footer -->
 
@@ -156,4 +278,5 @@
     </div>
 </body>
 <script src="js/nav.js"></script>
+<script src="js/modal.js"></script>
 </html>

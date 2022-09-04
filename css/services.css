@@ -159,10 +159,16 @@
     font-style: italic;
 }
 
-.svc-offer a {
+.svc-offer button {
     display: block;
-    margin: 20px 0 10px 0;
+    margin: 20px auto;
+    background-color: transparent;
+    border: none;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
     color: #273D4A;
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 .bg-1 {
