@@ -110,10 +110,6 @@
     border-radius: 5px;
 }
 
-.btn a:hover {
-    background-image:linear-gradient(to bottom, #2b495a 50%, #273D4A 50%);
-}
-
 @media screen and (min-width: 768px) {
     .body-wrap {
         width: 80%;
@@ -122,6 +118,9 @@
 }
 
 @media screen and (min-width: 1280px) {
+    .btn a:hover {
+        background-image:linear-gradient(to bottom, #2b495a 50%, #273D4A 50%);
+    }
     
     .body-wrap {
         width: 70%;
