@@ -142,24 +142,26 @@
 
 .btn-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
 }
 
 .btn-container button {
     border: none;
-    padding: 12px 50px;
     cursor: pointer;
     font-size: 15px;
+    margin-right: 10px;
 }
 
 .view {
     background-color: #273D4A;
     color: #ffffff;
+    padding: 12px 55px;
 }
 
 .apply {
     background-color: #968341;
     color: #ffffff;
+    padding: 12px 45px;
 }
 
 @media screen and (min-width:768px) {
@@ -175,10 +177,6 @@
         box-shadow: none;
         border-bottom: solid 1px #7D8D96;
         border-radius: 0;
-    }
-    
-    .btn-container button {
-        padding: 15px 50px
     }
     
     .view {
@@ -208,6 +206,16 @@
 
     .job-container {
         width: 1000px
+    }
+
+    .view:hover {
+        background-color: #374e5a;
+    }
+    
+    .apply:hover {
+        background-color: #9f8d4d;
+        color: #ffffff;
+        padding: 12px 45px;
     }
 }
 
