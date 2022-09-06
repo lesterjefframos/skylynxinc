@@ -1,0 +1,102 @@
+.contact-main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 600px;
+    background-image: url('../img/contact-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    align-content: left;
+    padding: 30px 20px;
+    background-color: rgba(255, 255, 255, .8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    width: 90%;
+    max-width: 600px;
+    border-radius: 15px;
+}
+
+.form-header {
+    color:#273D4A;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+.form-container input,
+.form-container textarea {
+    margin: 10px 0;
+    padding: 10px 10px;
+    font-size: 15px;
+}
+
+.form-container input:focus,
+.form-container textarea:focus {
+    outline: none;
+}
+
+.form-container input {
+    border: none;
+    border-radius: 5px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.form-container textarea {
+    border-radius: 5px;
+    resize: none;
+    font-family: 'Nunito Sans', sans-serif;
+    border: none;
+}
+
+.btn-cont {
+    display: flex;
+    justify-content: right;
+    margin-top: 20px;
+}
+
+.form-container button {
+    outline: none;
+    border: none;
+    color: #ffffff;
+    background-color: #273D4A;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    width: 150px;
+    transition: all .3s ease-in-out;
+}
+
+@media screen and (min-width: 768px) {
+    .contact-main-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+    }
+
+    .form-container {
+        margin-left: 8%;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .contact-main-container {
+        height: 90vh;
+    }
+
+    .form-header h2 {
+        font-size: 30px;
+    }
+
+    .form-container button:hover {
+        background-color: #314a58;
+    }
+}
