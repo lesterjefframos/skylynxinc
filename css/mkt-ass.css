@@ -1,9 +1,9 @@
 .career-hero {
-    background-image: linear-gradient(to top, #000000 10%, transparent 80%, transparent 100%), url('../img/career-banner.jpg');
+    background-image: url('../img/job-hero.jpg');
     background-size: cover;
     background-position: 30% 50%;
     background-repeat: no-repeat;
-    height: 60vh;
+    height: 20vh;
     display: block;
     text-align: center;
     padding: 15px;
@@ -32,8 +32,6 @@
 
 @media screen and (min-width: 768px) {
     .career-hero {
-        height: 30vh;
-        background-image: url('../img/career-banner.jpg');
         display: flex;
         justify-content: right;
         align-items: center;
@@ -42,18 +40,17 @@
 
     .career-hero-text {
         position: inherit;
-        width: 320px;
         margin-right: 2%;
     }
 
-    .title, .body {
-        color: #273D4A;
+    .career-hero-text span {
+        font-size: 40px;
     }
 }
 
 @media screen and (min-width: 1024px) {
     .career-hero {
-        height: 400px;
+        height: 200px;
     }
 
     .career-hero-text {
@@ -69,14 +66,12 @@
     }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1440px) {
     .career-hero {
-        height: 60vh;
+        height: 250px;
     }
-
     .career-hero-text {
-        width: 500px;
-        margin-right: 5%;
+        margin-right: 10%;
     }
 }
 
@@ -127,9 +122,7 @@
 }
 
 @media screen and (min-width: 1280px) {
-    .main-container {
-        margin: 30px 0;
-    }
+    
     .body-wrap {
         width: 70%;
     }
