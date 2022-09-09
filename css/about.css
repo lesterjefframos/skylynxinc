@@ -269,3 +269,17 @@
 .footer-section {
     background-color: #ffffff;
 }
+
+.fa-brands {
+    font-size: 25px !important;
+    color: #7D8D96 !important;
+    transition: all .2s ease-in-out !important;
+}
+
+@media screen and (min-width: 1280px) {
+    .items > a .fa-brands:hover {
+        transform: translateY(-5px);
+    }
+}
+
+
