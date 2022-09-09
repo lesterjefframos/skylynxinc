@@ -37,14 +37,17 @@
     <!-- nav end -->
 
     <div class="contact-main-container">
-        <form class="form-container">
+        <form class="form-container" action="https://formsubmit.co/a7405063cb9d30a3711bdde115e43801" method="POST">
             <div class="form-header">
                 <h2>Talk to us</h2>
             </div>
-            <input class="name" type="text" id="name" placeholder="Your Name" required>
-            <input class="name" type="email" id="email" placeholder="Enter Your Email" required>
-            <input  type="text" id="contact" placeholder="Contact No." required>
-            <textarea id="message" rows="6" placeholder="How can we help you?"></textarea>
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_subject" value="New Mail!">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="text" name="contact" placeholder="Your Contact No." required>
+            <input type="hidden" name="_next" value="lesterjefframos.github.io/thankyou.html">
+            <textarea id="message" rows="6" placeholder="How can we help you?" type="text" name="message"></textarea>
             <div class="btn-cont">
                 <button type="submit">Submit</button>
             </div>
