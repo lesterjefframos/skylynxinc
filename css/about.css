@@ -280,6 +280,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 5px;
 }
 
 .title-text {
@@ -303,7 +304,9 @@
 }
 
 .core-body {
-    padding: 10px 2px;
+    padding: 10px 5px;
+    width: 100%;
+    height: 80px;
 }
 
 .core-body span {
@@ -396,7 +399,7 @@
 
     .core-body {
         width: 100%;
-        height: 15vh;
+        height: 200px;
         text-align: center;
         padding: 15px;
     }
