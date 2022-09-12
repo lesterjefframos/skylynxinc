@@ -184,6 +184,7 @@
     border-radius: 10px;
     border: solid 2px #273D4A;
     padding: 10px;
+    height: 230px;
 }
 
 .vis {
@@ -223,6 +224,8 @@
     .mis,
     .vis {
         margin: 0 5px;
+        width: 50%;
+        height: 220px;
     }
     
     .vis {
@@ -243,6 +246,8 @@
     .vis {
         padding: 30px 50px;
         margin: 0 20px;
+        width: 50%;
+        height: 250px;
     }
 }
 
