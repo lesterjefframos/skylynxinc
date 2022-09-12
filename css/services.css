@@ -34,8 +34,8 @@
     }
 
     .hero-text {
-        width: 600px;
-        margin-left: 40%;
+        width: 400px;
+        margin-left: 45%;
     }
 
     .hero-text span {
@@ -52,7 +52,7 @@
         height: 50vh;
     }
     .hero-text {
-        width: 400px;
+        width: 500px;
         margin-left: 50%;
     }
 
@@ -86,15 +86,11 @@
     display: block;
 }
 
-.s-head {
-    color: #7D8D96;
-    text-transform: uppercase;
-}
-
 .l-head {
     color:#273D4A;
     font-size: 25px;
-    font-weight: 600;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .svc-section {
@@ -111,12 +107,9 @@
     text-align: center;
 }
 
-.svc-icon.studio,
-.svc-icon.video,
-.svc-icon.fac,
-.svc-icon.it-infra,
-.svc-icon.conc,
-.svc-icon.cs {
+.svc-icon.it,
+.svc-icon.leasing,
+.svc-icon.software {
     background-size: cover;
     background-position: center;
     height: 70px;
@@ -125,28 +118,16 @@
     margin: 0 auto;
 }
 
-.studio {
-    background-image: url('../img/studio.jpg');
+.it {
+    background-image: url('../img/it-cons.jpg');
 }
 
-.video {
-    background-image: url('../img/video.jpg');
+.leasing {
+    background-image: url('../img/leasing.jpg');
 }
 
-.fac {
-    background-image: url('../img/office.jpg');
-}
-
-.it-infra {
-    background-image: url('../img/it-infra.jpg');
-}
-
-.conc {
-    background-image: url('../img/concierge.jpg');
-}
-
-.cs {
-    background-image: url('../img/cust-service.jpg');
+.software {
+    background-image: url('../img/software.jpg');
 }
 
 .svc-item {

@@ -100,6 +100,11 @@ body.no-scroll {
         justify-content: center;
     }
 
+    .modal-content {
+        position: relative;
+        transform: translateY(-50%);
+    }
+
     .svc-img {
         margin-right: 20px;
     }
@@ -137,7 +142,7 @@ body.no-scroll {
 @media screen and (min-width: 1366px) {
     .modal-content {
         overflow-y: auto;
-        width: 70%;
+        width: 50%;
         padding: 30px 50px;
         max-height: 90vh;
     }

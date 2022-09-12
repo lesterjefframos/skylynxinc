@@ -75,7 +75,7 @@
     }
 
     .career-hero-text {
-        width: 500px;
+        width: 600px;
         margin-right: 5%;
     }
 }
@@ -98,6 +98,7 @@
     color:#273D4A;
     font-size: 25px;
     font-weight: 600;
+    text-transform: uppercase;
 }
 
 .job-main-container {

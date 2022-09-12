@@ -15,11 +15,6 @@
     top: 55%;
 }
 
-.hero-text p {
-    color: #ffffff;
-    text-shadow: 0 4px 5px #000000;
-}
-
 .hero-text h1 {
     background-image: linear-gradient(to bottom, #ffffff, #968341);
     -webkit-background-clip: text;
@@ -28,7 +23,7 @@
     line-height: 35px;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    font-size: 28px;
+    font-size: 25px;
 }
 
 .hero-btn {
@@ -131,7 +126,7 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin: 50px 20px
+    margin: 35px 20px
 }
 
 .title {
@@ -242,15 +237,16 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 490px;
+    height: 320px;
     text-align: center;
-    padding: 40px 5px;
+    padding: 20px 5px;
     margin-top: 50px;
 }
 
 .non-inter-section span {
     font-weight: 600;
     color: #273D4A;
+    font-size: 20px;
 }
 
 @media screen and (min-width: 768px) {
