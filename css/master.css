@@ -224,6 +224,7 @@ body {
 .fa-brands {
     font-size: 25px;
     color: #7D8D96;
+    transition: all .2s ease-in-out;
 }
 
 .line {
@@ -309,5 +310,10 @@ body {
 @media screen and (min-width: 1280px) {
     .footer-top {
         padding: 20px 15%;
+    }
+
+    .items > a .fa-brands:hover {
+        color: #ffffff;
+        transform: translateY(-5px);
     }
 }
