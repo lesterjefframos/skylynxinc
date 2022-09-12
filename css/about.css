@@ -363,6 +363,10 @@
         margin: 0 auto;
     }
 
+    .core-body {
+        height: 85px;
+    }
+
     .core-body span:last-of-type {
         font-size: 13px;
     }
