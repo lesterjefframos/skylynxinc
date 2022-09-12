@@ -296,18 +296,116 @@
     width: 90px;
     height: 90px;
     background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    font-weight: bold;
+    position: relative;
+    transform: translateY(50%);
 }
 
-.fa-brands {
-    font-size: 25px !important;
-    color: #7D8D96 !important;
-    transition: all .2s ease-in-out !important;
+.core-body {
+    width: 267px;
+    height: 250px;
+    display: flex;
+    justify-content: top;
+    flex-direction: column;
+    align-items: center;
 }
 
-@media screen and (min-width: 1280px) {
-    .items > a .fa-brands:hover {
-        transform: translateY(-5px);
+.div-line {
+    width: 100px;
+    height: 1px;
+    background-color: #ffffff;
+    margin: 10px 0;
+}
+
+.core-body span {
+    display: block;
+    color: #ffffff;
+}
+
+.core-body span:first-of-type {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20%;
+}
+
+.core-body span:last-of-type {
+    padding: 0 20px;
+}
+
+.color-1 {
+    background-color: #273D4A;
+}
+
+.stroke-1 {
+    border: #273D4A solid 5px;
+}
+
+.color-2 {
+    background-color: #2E4857;
+}
+
+.stroke-2 {
+    border: #2E4857 solid 5px;
+}
+
+.color-3 {
+    background-color: #507D96;
+}
+
+.stroke-3 {
+    border: #507D96 solid 5px;
+}
+
+.color-4 {
+    background-color: #72B1D6;
+}
+
+.stroke-4 {
+    border: #72B1D6 solid 5px;
+}
+
+@media screen and (min-width: 768px) {
+    .core-value {
+        flex-direction: row;
+    }
+
+    .core-body {
+        width: 180px;
+        height: 350px;
+    }
+
+    .core-container {
+        width: 180px;
+    }
+
+    .top-initials {
+        font-size: 30px;
+        width: 90px;
+        height: 110px;
+    }
+
+    .core-body span:first-of-type {
+        margin-top: 30%;
+    }
+
+    .core-body span:last-of-type {
+        padding: 0 10px;
+        font-size: 15px;
     }
 }
 
+@media screen and (min-width: 1024px) {
+    .core-container {
+        width: 250px;
+    }
 
+    .core-body {
+        width: 250px;
+    }
+    
+}
