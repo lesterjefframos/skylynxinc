@@ -1,29 +1,32 @@
 .hero {
     display: block;
-    background-image: linear-gradient(to top, #000000 5%, transparent), url('../img/home-banner.jpg');
-    height: 70vh;
+    background-image: url('../img/mobile-home-banner.jpg');
+    height: 500px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 80% 50%;
+    background-position: center;
     position: relative;
     text-align: center;
     z-index: 1;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .1);
 }
 
 .hero-text {
     position: relative;
-    top: 55%;
+    top: 65%;
 }
 
 .hero-text h1 {
-    background-image: linear-gradient(to bottom, #ffffff, #968341);
-    -webkit-background-clip: text;
-    color: transparent;
+    color: #273D4A;
     text-transform: uppercase;
-    line-height: 35px;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 25px;
+}
+
+.hero-text p {
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 .hero-btn {
@@ -31,7 +34,7 @@
 }
 
 .hero-btn a {
-    background: #968341;
+    background: #273D4A;
     text-decoration: none;
     color: #ffffff;
     border-radius: 5px;
@@ -55,7 +58,7 @@
 
 @media screen and (min-width: 1024px) {
     .hero {
-        height: 50vh;
+        height: 30vh;
         transform: translateY(0%);
     }
 
@@ -64,11 +67,11 @@
     }
 
     .hero-text p {
-        font-size: 25px;
+        font-size: 22px;
     }
 
     .hero-text h1 {
-        font-size: 35px;
+        font-size: 30px;
         line-height: 45px;
     }
 }
@@ -79,7 +82,7 @@
     }
 
     .hero-text {
-        margin-left: 5%;
+        margin-left: 8%;
     }
 
     .hero-text p {
@@ -87,7 +90,7 @@
     }
 
     .hero-text h1 {
-        font-size: 35px;
+        font-size: 45px;
         line-height: 45px;
     }
 
@@ -97,14 +100,15 @@
 
     .hero-btn a {
         background-color: transparent;
-        border: solid 1px #ffffff;
+        border: solid 1px #273D4A;
         padding: 15px 45px;
         transition: all .3s ease-in-out;
+        color: #273D4A;
     }
 
     .hero-btn a:hover {
-        box-shadow: 0 -100px 0 #ffffff inset;
-        color: #968341;
+        box-shadow: 0 -100px 0 #273D4A inset;
+        color: #ffffff;
         font-weight: 600;
     }
 }
@@ -112,7 +116,6 @@
 @media screen and (min-width: 1366px) {
     .hero-text h1 {
         font-size: 45px;
-        line-height: 50px;
     }
 }
 
@@ -233,20 +236,25 @@
 }
 
 .non-inter-section {
-    background-image: url('../img/mobile-non-interactive-bg.jpg');
-    background-position: center;
+    background-image: url('../img/home-non-interactive-bg.jpg');
+    background-position: 35% 50%;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 320px;
-    text-align: center;
+    height: 200px;
     padding: 20px 5px;
     margin-top: 50px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
 }
 
 .non-inter-section span {
     font-weight: 600;
     color: #273D4A;
-    font-size: 20px;
+    font-size: 18px;
+    text-align: right;
+    width: 200px;
+    margin-right: 5%;
 }
 
 @media screen and (min-width: 768px) {
@@ -255,21 +263,28 @@
         justify-content: right;
         align-items: center;
         background-image: url('../img/home-non-interactive-bg.jpg');
-        height: 30vh;
+        background-position: top;
+        height: 220px;
         padding-left: 200px;
         text-align: right;
         font-size: 18px;
     }
 
     .non-inter-section span {
-        margin-right: 5%;
-        font-size: 20px;
+        width: 100%;
+        font-size: 22px;
     }
 }
 
 @media screen and (min-width: 1024px) {
+    .non-inter-section {
+        height: 300px;
+        background-position: top;
+    }
+
     .non-inter-section span {
         font-size: 25px;
+        margin-right: 15%;
     }
 }
 
@@ -279,9 +294,14 @@
         justify-content: right;
         align-items: center;
         background-image: url('../img/home-non-interactive-bg.jpg');
+        background-position: top;
         height: 50vh;
         padding-left: 200px;
         text-align: right;
+    }
+
+    .non-inter-section span {
+        margin-right: 15%;
     }
 
     .non-inter-section span {

@@ -65,7 +65,7 @@
     }
 
     .body {
-        font-size: 20px;
+        font-size: 30px;
     }
 }
 
@@ -75,8 +75,8 @@
     }
 
     .career-hero-text {
-        width: 600px;
-        margin-right: 5%;
+        width: 500px;
+        margin-right: 10%;
     }
 }
 

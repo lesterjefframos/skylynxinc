@@ -47,13 +47,18 @@
     }
 }
 
+@media screen and (min-width: 1024px) {
+    .hero-text {
+        margin-left: 50%;
+    }
+}
+
 @media screen and (min-width: 1280px) {
     .service-hero {
         height: 50vh;
     }
     .hero-text {
-        width: 500px;
-        margin-left: 50%;
+        width: 585px;
     }
 
     .title {
