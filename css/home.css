@@ -3,8 +3,8 @@
     background-image: url('../img/mobile-home-banner.jpg');
     height: 500px;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-size: contain;
+    background-position: top;
     position: relative;
     text-align: center;
     z-index: 1;
@@ -44,6 +44,8 @@
 @media screen and (min-width: 768px) {
     .hero {
         background-image: url('../img/home-banner.jpg');
+        background-size: cover;
+        background-position: center;
         display: flex;
         align-items: center;
         height: 30vh;
