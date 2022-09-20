@@ -95,6 +95,7 @@
 
 .resp ul li, .reqs ul li {
     margin-bottom: 5px;
+    margin-left: 20px;
 }
 
 .btn {
