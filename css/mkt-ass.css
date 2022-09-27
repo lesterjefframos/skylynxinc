@@ -100,15 +100,24 @@
 
 .btn {
     margin: 30px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .btn a {
     text-decoration: none;
     font-size: 15px;
     color: #ffffff;
-    padding: 15px 35px;
+    padding: 15px 20px;
     background-image:linear-gradient(to top, #2b495a 50%, #273D4A 50%);
     border-radius: 5px;
+    margin: 10px;
+}
+
+.btn a:last-of-type {
+    background-image:linear-gradient(to top, #968341 50%, #9c8a4c 50%);
+    padding: 15px 45px;
 }
 
 @media screen and (min-width: 768px) {
@@ -121,6 +130,10 @@
 @media screen and (min-width: 1280px) {
     .btn a:hover {
         background-image:linear-gradient(to bottom, #2b495a 50%, #273D4A 50%);
+    }
+
+    .btn a:last-of-type:hover {
+        background-image:linear-gradient(to top, #9c8a4c 50%, #968341 50%);
     }
     
     .body-wrap {
