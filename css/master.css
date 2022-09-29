@@ -11,7 +11,7 @@
 /* css reset */
 
 body {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Nunito Sans', sans-serif !important;
     padding-top: 100px;
 }
 
@@ -277,9 +277,6 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-    .footer-section {
-        margin-top: -6px;
-    }
     .footer-logo {
         display: block;
     }
@@ -308,6 +305,7 @@ body {
 }
 
 @media screen and (min-width: 1280px) {
+
     .footer-top {
         padding: 20px 15%;
     }

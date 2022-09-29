@@ -59,6 +59,10 @@
 }
 
 @media screen and (min-width: 1024px) {
+    .hero {
+        height: 560px;
+    }
+
     .hero-text {
         margin-left: 40px;
     }
@@ -252,6 +256,7 @@
     text-align: right;
     width: 200px;
     margin-right: 5%;
+    text-transform: capitalize;
 }
 
 @media screen and (min-width: 768px) {
@@ -329,6 +334,7 @@
     font-size: 20px;
     font-weight: bold;
     color: #273D4A;
+    text-transform: capitalize;
 }
 
 .join-img img {

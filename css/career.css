@@ -28,6 +28,7 @@
 
 .body {
     color: #ffffff;
+    text-transform: capitalize;
 }
 
 @media screen and (min-width: 768px) {
@@ -72,6 +73,10 @@
 @media screen and (min-width: 1280px) {
     .career-hero {
         height: 60vh;
+    }
+
+    .title {
+        font-size: 45px;
     }
 
     .career-hero-text {
@@ -220,5 +225,19 @@
     }
 }
 
+/* footer fixed */
 
+@media screen and (min-width: 768px) {
+    .footer-section {
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .footer-section {
+        position: static;
+    }
+}
 

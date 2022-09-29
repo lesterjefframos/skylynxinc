@@ -12,6 +12,7 @@ body.no-scroll {
     font-size: 20px;
     color: #273D4A;
     font-weight: 600;
+    text-transform: uppercase;
 }
 
 .header-line {
